@@ -1,0 +1,14 @@
+C:\Users\Usuario\source\repos\Garagem\Garagem\bin\Debug\Garagem.exe.config
+C:\Users\Usuario\source\repos\Garagem\Garagem\bin\Debug\Garagem.exe
+C:\Users\Usuario\source\repos\Garagem\Garagem\bin\Debug\Garagem.pdb
+C:\Users\Usuario\source\repos\Garagem\Garagem\obj\Debug\Garagem.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\Garagem\Garagem\obj\Debug\Garagem.csproj.SuggestedBindingRedirects.cache
+C:\Users\Usuario\source\repos\Garagem\Garagem\obj\Debug\Garagem.Properties.Resources.resources
+C:\Users\Usuario\source\repos\Garagem\Garagem\obj\Debug\Garagem.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\Garagem\Garagem\obj\Debug\Garagem.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Garagem\Garagem\obj\Debug\Garagem.exe
+C:\Users\Usuario\source\repos\Garagem\Garagem\obj\Debug\Garagem.pdb
+C:\Users\Usuario\source\repos\Garagem\Garagem\obj\Debug\Garagem.form_Cadastro.resources
+C:\Users\Usuario\source\repos\Garagem\Garagem\obj\Debug\Garagem.form_TelaPrincipal.resources
+C:\Users\Usuario\source\repos\Garagem\Garagem\obj\Debug\Garagem.form_Configurar.resources
+C:\Users\Usuario\source\repos\Garagem\Garagem\obj\Debug\Garagem.form_ComecarODia.resources
