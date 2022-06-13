@@ -35,7 +35,6 @@
             this.textBox_Hora = new System.Windows.Forms.TextBox();
             this.labelHora = new System.Windows.Forms.Label();
             this.button_Entrar = new System.Windows.Forms.Button();
-            this.textBox_NaGaragem = new System.Windows.Forms.TextBox();
             this.button_Sair = new System.Windows.Forms.Button();
             this.label_Lista = new System.Windows.Forms.Label();
             this.label_Vagas = new System.Windows.Forms.Label();
@@ -49,8 +48,9 @@
             this.button_Limpar = new System.Windows.Forms.Button();
             this.label_Disponivel = new System.Windows.Forms.Label();
             this.textBox_Disponivel = new System.Windows.Forms.TextBox();
-            this.textBox_Sairam = new System.Windows.Forms.TextBox();
             this.label_Sairam = new System.Windows.Forms.Label();
+            this.listBox_NaGaragem = new System.Windows.Forms.ListBox();
+            this.listBox_Sairam = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label_Placa
@@ -116,15 +116,6 @@
             this.button_Entrar.Text = "&Entrar";
             this.button_Entrar.UseVisualStyleBackColor = true;
             this.button_Entrar.Click += new System.EventHandler(this.button_Salvar_Click);
-            // 
-            // textBox_NaGaragem
-            // 
-            this.textBox_NaGaragem.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBox_NaGaragem.Location = new System.Drawing.Point(289, 89);
-            this.textBox_NaGaragem.Multiline = true;
-            this.textBox_NaGaragem.Name = "textBox_NaGaragem";
-            this.textBox_NaGaragem.Size = new System.Drawing.Size(234, 255);
-            this.textBox_NaGaragem.TabIndex = 9;
             // 
             // button_Sair
             // 
@@ -199,6 +190,7 @@
             // 
             // button_ConfirmarSaida
             // 
+            this.button_ConfirmarSaida.Enabled = false;
             this.button_ConfirmarSaida.Location = new System.Drawing.Point(130, 301);
             this.button_ConfirmarSaida.Name = "button_ConfirmarSaida";
             this.button_ConfirmarSaida.Size = new System.Drawing.Size(109, 43);
@@ -211,7 +203,7 @@
             // 
             this.label_ListaaPopular.AutoSize = true;
             this.label_ListaaPopular.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_ListaaPopular.Location = new System.Drawing.Point(286, 68);
+            this.label_ListaaPopular.Location = new System.Drawing.Point(262, 68);
             this.label_ListaaPopular.Name = "label_ListaaPopular";
             this.label_ListaaPopular.Size = new System.Drawing.Size(68, 13);
             this.label_ListaaPopular.TabIndex = 21;
@@ -244,33 +236,41 @@
             this.textBox_Disponivel.Size = new System.Drawing.Size(71, 20);
             this.textBox_Disponivel.TabIndex = 25;
             // 
-            // textBox_Sairam
-            // 
-            this.textBox_Sairam.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBox_Sairam.Location = new System.Drawing.Point(533, 89);
-            this.textBox_Sairam.Multiline = true;
-            this.textBox_Sairam.Name = "textBox_Sairam";
-            this.textBox_Sairam.Size = new System.Drawing.Size(239, 255);
-            this.textBox_Sairam.TabIndex = 26;
-            // 
             // label_Sairam
             // 
             this.label_Sairam.AutoSize = true;
             this.label_Sairam.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Sairam.Location = new System.Drawing.Point(530, 68);
+            this.label_Sairam.Location = new System.Drawing.Point(534, 68);
             this.label_Sairam.Name = "label_Sairam";
             this.label_Sairam.Size = new System.Drawing.Size(44, 13);
             this.label_Sairam.TabIndex = 27;
             this.label_Sairam.Text = "Saíram:";
             this.label_Sairam.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // listBox_NaGaragem
+            // 
+            this.listBox_NaGaragem.FormattingEnabled = true;
+            this.listBox_NaGaragem.Location = new System.Drawing.Point(265, 89);
+            this.listBox_NaGaragem.Name = "listBox_NaGaragem";
+            this.listBox_NaGaragem.Size = new System.Drawing.Size(266, 407);
+            this.listBox_NaGaragem.TabIndex = 28;
+            // 
+            // listBox_Sairam
+            // 
+            this.listBox_Sairam.FormattingEnabled = true;
+            this.listBox_Sairam.Location = new System.Drawing.Point(537, 89);
+            this.listBox_Sairam.Name = "listBox_Sairam";
+            this.listBox_Sairam.Size = new System.Drawing.Size(352, 407);
+            this.listBox_Sairam.TabIndex = 29;
+            // 
             // form_Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 383);
+            this.ClientSize = new System.Drawing.Size(901, 514);
+            this.Controls.Add(this.listBox_Sairam);
+            this.Controls.Add(this.listBox_NaGaragem);
             this.Controls.Add(this.label_Sairam);
-            this.Controls.Add(this.textBox_Sairam);
             this.Controls.Add(this.textBox_Disponivel);
             this.Controls.Add(this.label_Disponivel);
             this.Controls.Add(this.button_Limpar);
@@ -284,7 +284,6 @@
             this.Controls.Add(this.label_Vagas);
             this.Controls.Add(this.label_Lista);
             this.Controls.Add(this.button_Sair);
-            this.Controls.Add(this.textBox_NaGaragem);
             this.Controls.Add(this.button_Entrar);
             this.Controls.Add(this.labelHora);
             this.Controls.Add(this.textBox_Hora);
@@ -309,7 +308,6 @@
         private System.Windows.Forms.TextBox textBox_Hora;
         private System.Windows.Forms.Label labelHora;
         private System.Windows.Forms.Button button_Entrar;
-        private System.Windows.Forms.TextBox textBox_NaGaragem;
         private System.Windows.Forms.Button button_Sair;
         private System.Windows.Forms.Label label_Lista;
         private System.Windows.Forms.Label label_Vagas;
@@ -323,7 +321,8 @@
         private System.Windows.Forms.Button button_Limpar;
         private System.Windows.Forms.Label label_Disponivel;
         private System.Windows.Forms.TextBox textBox_Disponivel;
-        private System.Windows.Forms.TextBox textBox_Sairam;
         private System.Windows.Forms.Label label_Sairam;
+        private System.Windows.Forms.ListBox listBox_NaGaragem;
+        private System.Windows.Forms.ListBox listBox_Sairam;
     }
 }

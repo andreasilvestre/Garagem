@@ -45,5 +45,15 @@ namespace Garagem
             form_ComecarODia comecar = new form_ComecarODia();
             comecar.ShowDialog();   
         }
+
+        private void naGaragemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void saíramToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

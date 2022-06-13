@@ -32,12 +32,9 @@
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configurarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.naGaragemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saíramToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.começarODiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.começarODiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +42,6 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastroToolStripMenuItem,
-            this.consultaToolStripMenuItem,
             this.sairToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -66,37 +62,23 @@
             // cadastrarToolStripMenuItem
             // 
             this.cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
-            this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.cadastrarToolStripMenuItem.Text = "Cadastrar";
             this.cadastrarToolStripMenuItem.Click += new System.EventHandler(this.cadastrarToolStripMenuItem_Click);
             // 
             // configurarToolStripMenuItem
             // 
             this.configurarToolStripMenuItem.Name = "configurarToolStripMenuItem";
-            this.configurarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.configurarToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.configurarToolStripMenuItem.Text = "Configurar";
             this.configurarToolStripMenuItem.Click += new System.EventHandler(this.configurarToolStripMenuItem_Click);
             // 
-            // consultaToolStripMenuItem
+            // começarODiaToolStripMenuItem
             // 
-            this.consultaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.naGaragemToolStripMenuItem,
-            this.saíramToolStripMenuItem});
-            this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
-            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.consultaToolStripMenuItem.Text = "Consulta";
-            // 
-            // naGaragemToolStripMenuItem
-            // 
-            this.naGaragemToolStripMenuItem.Name = "naGaragemToolStripMenuItem";
-            this.naGaragemToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
-            this.naGaragemToolStripMenuItem.Text = "Na garagem";
-            // 
-            // saíramToolStripMenuItem
-            // 
-            this.saíramToolStripMenuItem.Name = "saíramToolStripMenuItem";
-            this.saíramToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
-            this.saíramToolStripMenuItem.Text = "Saíram";
+            this.começarODiaToolStripMenuItem.Name = "começarODiaToolStripMenuItem";
+            this.começarODiaToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.começarODiaToolStripMenuItem.Text = "Começar o dia";
+            this.começarODiaToolStripMenuItem.Click += new System.EventHandler(this.começarODiaToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
@@ -109,16 +91,9 @@
             // sairToolStripMenuItem1
             // 
             this.sairToolStripMenuItem1.Name = "sairToolStripMenuItem1";
-            this.sairToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.sairToolStripMenuItem1.Size = new System.Drawing.Size(93, 22);
             this.sairToolStripMenuItem1.Text = "Sair";
             this.sairToolStripMenuItem1.Click += new System.EventHandler(this.sairToolStripMenuItem1_Click);
-            // 
-            // começarODiaToolStripMenuItem
-            // 
-            this.começarODiaToolStripMenuItem.Name = "começarODiaToolStripMenuItem";
-            this.começarODiaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.começarODiaToolStripMenuItem.Text = "Começar o dia";
-            this.começarODiaToolStripMenuItem.Click += new System.EventHandler(this.começarODiaToolStripMenuItem_Click);
             // 
             // form_TelaPrincipal
             // 
@@ -142,9 +117,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadastrarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem consultaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem naGaragemToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saíramToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem configurarToolStripMenuItem;

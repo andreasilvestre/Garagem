@@ -65,7 +65,7 @@
     <Compile Include="form_Configurar.Designer.cs">
       <DependentUpon>form_Configurar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Persitencia.cs" />
+    <Compile Include="Persistencia.cs" />
     <Compile Include="form_TelaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>

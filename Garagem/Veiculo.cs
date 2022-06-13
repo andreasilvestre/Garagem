@@ -13,16 +13,15 @@ namespace Garagem
         //atributos: placaVeiculo, dataEntrada, horaEntrada, tempoPermanencia, valorCobrado
         //métodos: construtor só com placaVeiculo, dataEntrada, horaEntrada; getters e setters
 
-        string placa;
+        string placa; 
         string dataEntrada;
         string horaEntrada;
-        double valorHora;
+        double valorHora; 
         string dataSaida;
         string horaSaida;
         int permanenciaMinuto;
         int permanenciaHora;
         double valorCobrado;
-
 
         public Veiculo()
         {
@@ -38,6 +37,17 @@ namespace Garagem
             this.DataEntrada = dataEntrada;
             this.HoraEntrada = horaEntrada;
             this.ValorHora = valorHora;
+        }
+
+        public Veiculo(string placa, string dataSaida, string horaSaida, int permanenciaMinuto, int permanenciaHora, double valorHora, double valorCobrado)
+        {
+            this.placa = placa;
+            this.dataSaida = dataSaida;
+            this.horaSaida = horaSaida;
+            this.permanenciaMinuto = permanenciaMinuto;
+            this.permanenciaHora = permanenciaHora;
+            this.valorHora = valorHora;
+            this.valorCobrado = valorCobrado;
         }
 
         public string Placa { get => placa; set => placa = value; }
