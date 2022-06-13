@@ -100,8 +100,6 @@ namespace Garagem
             }
 
             //existe vaga?
-            //verificar na lista quantos veiculos estão na garagem
-            //tammanho máximo na configuração = configura
             Configurar configuracao = new Configurar();
             configuracao.lerConfiguracao();
 
@@ -139,7 +137,7 @@ namespace Garagem
         {
 
             //FAZ RESUMO SAÍDA - NÃO SALVA POR ENQUANTO - APENAS EXIBE RESUMO
-            //PARA GRAVAR SÁIDA APERTAR BOTÃO CONFIRMAR
+            //PARA GRAVAR SAÍDA APERTAR BOTÃO CONFIRMAR
 
             //validar campos preenchidos
             if (textBox_Placa.Text.Length != 7)
@@ -217,10 +215,8 @@ namespace Garagem
             //atualizando a saída
             //adiciona na lista de saída
             listaSairam.Add(new Veiculo(placaSaida, dataSaida, horaSaida, permanenciaMinuto, permanenciaHora, valorHora, valorCobrado));
-
             //popula textbox Saída - exibir na tela as saídas
             popularSairam(listaSairam);
-
             //grava no arquivo todas as saídas
             Persistencia.gravarSaida(listaSairam);
 
