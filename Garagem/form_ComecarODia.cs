@@ -21,7 +21,6 @@ namespace Garagem
         private void button1_Click(object sender, EventArgs e)
         {
 
-            //MessageBoxButtons.YesNo()"Confirma procedimento");
 
             StreamWriter escritor2 = new StreamWriter("entrada.dat");
             escritor2.Close();
